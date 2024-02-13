@@ -13,7 +13,7 @@
         {{ $.Scratch.Set "title" (index (split $figure "=") 1) }}
         {{ $.Scratch.Set "link" (index (split $figure "=") 2) }}
         {{ $resolved_path := $originals.GetMatch ($.Scratch.Get "src") }}
-        <div class="theme-table-image col-sm-{{ $.Scratch.Get "size" }}">
+        <div class="theme-table-image float-start px-3 col-sm-{{ $.Scratch.Get "size" }}">
             <figure style="padding: 0px;">
                 {{ if eq $type "gifv" }}
                     <div class="embed-responsive embed-responsive-4by3">

@@ -4,7 +4,7 @@
     <div class="site-logo d-block d-sm-none d-md-block" style="position: absolute; left: 0; top: 48px; background-size: 150px 150px; z-index: 4">&nbsp;</div>
   </div>
 
-  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-interval="4000">
 
     <!-- Wrapper for slides -->
     <div id="carousel-inner" class="carousel-inner">
@@ -13,12 +13,8 @@
           {{ $fileTitle := (index (split .Name "-") 1) }}
           {{ $fileTitle := (index (split $fileTitle ".") 0) }}
           <div class="carousel-item {{if eq $index 0}}active{{end}}">
-              <img class="article-image img-fluid mx-auto d-block"
-                 {{if eq $index 0}}
+              <img class="article-image img-responsive center-block w-100"
                     src="/images/jumbotron{{ $element.Name | relURL }}"
-                 {{else}}
-                    data-bs-lazy="/images/jumbotron{{ $element.Name | relURL }}"
-                 {{end}}
                  alt="{{ $fileTitle }}">
             <div class="carousel-caption">{{ $fileTitle }}</div>
           </div>
@@ -39,7 +35,7 @@
 
     <div class="row">
       <div id="carousel-description" class="col-md-12">
-        <b>Citra</b> AAAAAAABACDEFGis an open-source emulator for the Nintendo 3DS capable of playing many of your favorite games. <a href="/wiki/faq/">Learn More.<a/>
+        <b>Citra</b> ABCDFEGHH is an open-source emulator for the Nintendo 3DS capable of playing many of your favorite games. <a href="/wiki/faq/">Learn More.<a/>
       </div>
 
       <div class="col-md-12 jumbotron-action" id="jumbotron-download" style="padding-bottom: 2%; text-align: center;">

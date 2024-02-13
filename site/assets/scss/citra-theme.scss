@@ -67,7 +67,18 @@ a:hover {
 
 /* Bootstrap NavBar */
 .dropdown-menu > li > a {
+  color: #333 !important;
   font-size: 18px;
+}
+.dropdown-menu > li > a:hover {
+  color: #FF8E03 !important;
+  text-decoration: none !important;
+}
+.dropdown-menu > li > a:active {
+  color: #FF8E03 !important;
+}
+.dropdown-item:active {
+  background-color: #f8f9fa !important;
 }
 .navbar, #navbar.in, #navbar.collapsing {
   background-color: #fff;
