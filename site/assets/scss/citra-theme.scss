@@ -120,6 +120,32 @@ a:hover {
   box-shadow: none;
 }
 
+.btn {
+  color: #ff8e03;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #ff8e03 !important;
+  border-color: #e98000 !important;
+  border-bottom-color: rgb(233, 128, 0) !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #cf7200 !important;
+  border-color: #ab5e00 !important;
+  border-bottom-color: rgb(171, 94, 0) !important;
+}
+
+.btn-primary:active {
+  color: #fff !important;
+  background-color: #cf7200 !important;
+  background-image: none !important;
+  border-color: #ab5e00 !important;
+  border-bottom-color: rgb(171, 94, 0) !important;
+}
+
 /* Carousel */
 
 #carousel {
@@ -172,7 +198,20 @@ a:hover {
   z-index: 5;
 }
 
+.panel {
+  border-radius: 4px;
+  padding: 1rem;
+}
+
 /* General */
+
+a:not([class]) {
+    text-decoration: none;
+}
+
+a:not([class]):hover {
+    text-decoration: underline;
+}
 
 .site-logo {
   width: 100%;

@@ -1,4 +1,4 @@
-<div id="advertisement" class = "ad">
+<div id="advertisement" class="ad">
   <h3>Advertisement</h3>
   <ins class="ad adsbygoogle"
        style="display:block"
@@ -7,7 +7,7 @@
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-<div class="tagcloud hidden-sm hidden-xs">
+<div class="tagcloud d-none d-sm-none d-md-block">
   <h3>News Tag Cloud</h3>
   <ul>
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
@@ -16,7 +16,7 @@
   </ul>
 </div>
 
-<div id="twitter" class="hidden-sm hidden-xs">
-  <a class="twitter-timeline" data-tweet-limit="3" href="https://twitter.com/citraemu?ref_src=twsrc%5Etfw">Tweet Feed</a>
+<div id="twitter" class="d-none d-sm-none d-md-block">
+  <a class="twitter-timeline" data-height="1200" href="https://twitter.com/citraemu?ref_src=twsrc%5Etfw">Tweet Feed</a>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>

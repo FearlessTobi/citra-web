@@ -1,5 +1,5 @@
 <a href="{{ .Permalink }}">
-  <div class="entry-embed-header">
+  <div class="entry-embed-header" style="position: relative;">
       {{ $slug := path.BaseName .RelPermalink }}
       <div class="entry-embed" style="background: url('{{ .Site.BaseURL }}/images/banners/{{ .Params.Banner | default (print $slug ".png") }}')">
           <header>
