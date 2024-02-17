@@ -11,7 +11,7 @@
   <h3>News Tag Cloud</h3>
   <ul>
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-      <li><a class="taxonomy-{{ $name}}" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+      <li><a class="news-link taxonomy-{{ $name}}" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
     {{ end }}
   </ul>
 </div>

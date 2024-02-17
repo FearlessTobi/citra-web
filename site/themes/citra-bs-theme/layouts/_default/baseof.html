@@ -54,10 +54,10 @@
     </div>
 
     <div class="row">
-            <div id="sidebar" class="col-12 col-md-3">
+            <div id="sidebar" class="col-12 col-md-3 d-none d-lg-block">
             {{ partial "sidebar" . }}
         </div>
-    <div id="content" class="col-12 col-md-9">
+    <div id="content" class="col-12 col-lg-9">
             {{ block "main" . }}{{ end }}
         </div>
     </div>
